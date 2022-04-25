@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* padding: 0; */
+    ;
+}
+
+body {
+    background: linear-gradient(120deg, #17bebb, #f0a6ca);
+    /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #79168d;
+}
+
+.ContainerMessages::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.37);
+}
+
+.ContainerMessages::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0);
+    width: 10px;
+}
+
+.ContainerMessages::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+}
+
+.ContainerMessages::-webkit-scrollbar-thumb:hover {
+    background: #79168d;
+}
+
+.ContainerMessages {
+    background-color: rgba(255, 255, 255, 0.13);
+    /* display: flex; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-size: 22px;
+    border: 1px solid black;
+    height: auto;
+    min-height: 350px;
+    max-height: 780px;
+    overflow-y: scroll;
+    font-family: "Raleway";
+    margin-top: 3%;
+    border: 0;
+}
+
+.formmsg {
+    display: flex;
+    margin-left: auto;
+    width: 500px;
+    padding-top: 3%;
+    margin-right: auto;
+}
+
+.inputtext {
+    background: rgba(255, 255, 255, 0.144);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    padding: 1.2em;
+    outline: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+.btn-modal {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+
+.inputtext::placeholder {
+    color: white;
+}
+
+.inputName::placeholder {
+    color: white;
+}
+
+.inputName {
+    background: rgba(255, 255, 255, 0.144);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    padding: 1.2em;
+    outline: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
