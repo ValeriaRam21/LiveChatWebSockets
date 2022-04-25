@@ -1,9 +1,9 @@
 
 # dependencies
-./node_modules
+node_modules/
 /.pnp
 .pnp.js
-./app.js
+app.js
 
 # testing
 /coverage
@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #Charpters
-./chat.zip
-./tarea3.rar
+chat.zip
+tarea3.rar
