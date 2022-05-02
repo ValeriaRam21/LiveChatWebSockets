@@ -5,7 +5,6 @@ Then:
 > node server.js
 > open http://localhost:8080 in the browser
 */
-import './assets/css/style.css'
 const http = require('http');
 const fs = require('fs');
 const ws = new require('ws');
@@ -28,6 +27,9 @@ function accept(req, res) {
         res.end();
     }
 }
+
+// let NickNames = [];
+
 
 function onSocketConnect(ws) {
     clients.add(ws);
@@ -58,3 +60,13 @@ if (!module.parent) {
     // log = console.log;
     exports.accept = accept;
 }
+
+//  socket.on('new user', (data,cb)=>{
+//      if(NickNames.indexOf(data) != -1){
+//          cb(false);
+//      }else{
+//          cb(true);
+//          socket.NickName = data;
+//          NickNames.push(socket.NickName);
+//      }
+//  })
